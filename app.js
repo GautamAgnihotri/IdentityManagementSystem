@@ -21,8 +21,12 @@ var ContractAddress = "0x43b0e8F1b74E631a7cdd00629bdD39dFBcA551C9";
 
 
 app.get('/', function (req, res) {
+	res.render("home")
+})
+app.get('/home', function (req, res) {
 	res.render("index")
 })
+
 
 app.get('/AddUser', function (req, res) {
 	var data = {ContractAddress:ContractAddress};
