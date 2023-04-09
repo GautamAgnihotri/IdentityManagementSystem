@@ -17,7 +17,8 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 // Deploy Smart Contract and place smart contract address here 
-var ContractAddress = "0x43b0e8F1b74E631a7cdd00629bdD39dFBcA551C9";
+var ContractAddress = "";
+
 
 
 app.get('/', function (req, res) {
